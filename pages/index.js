@@ -5,18 +5,18 @@ export default function Home() {
   const [todoList, setTodoList] = useState([{
     id: 1,
     title: 'drink coffee',
-    done: false
+    done: true
   },{
     id: 2,
-    title: 'drink coffee',
+    title: 'drink curry',
     done: false
   },{
     id: 3,
-    title: 'drink coffee',
+    title: 'drink numa',
     done: false
   },{
     id: 4,
-    title: 'drink coffee',
+    title: 'drink protein',
     done: false
   },])
 
@@ -46,7 +46,7 @@ export default function Home() {
         </h1>
 
         {todoList.map(todo => {
-          return <label key={todo.id} onChange={() => update(todo.id)}>
+          return <label style={{display: 'flex'}} key={todo.id} onChange={() => update(todo.id)}>
             <input type="checkbox" checked={todo.done} />
             {todo.title}
           </label>
