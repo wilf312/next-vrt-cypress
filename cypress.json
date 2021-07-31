@@ -1,0 +1,4 @@
+{
+  "testFiles": "**/*.it.ts",
+  "integrationFolder": "pages"
+}
